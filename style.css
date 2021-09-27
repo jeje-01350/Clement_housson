@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', cursive;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+}
+
+.selection ::selection {
+    color: white;
+    background: #000;
+}
+
+
+/*******************************scroll up *********************************/
+
+
+.scrollUp {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+    opacity: 0.5;
+    border: red;
+}
+
+#scrollUp img {
+    width: 25px;
+}
+
+/* *************************NavBar************************  */
+
+li:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+nav {
+    z-index: 1000012;
+}
+
+ul {
+    right: 0%;
+    display: flex;
+    position: absolute;
+    margin-right: 50px;
+    text-shadow: 1px 1.5px 3px #0000007d;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* *********************Background + titre*********************** */
+
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+
+.background-container {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+    height: 600px;
+
+}
+
+.twinkling {
+    width: 100%;
+    height: 300px;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+
+    /*-moz-animation:move-background 70s linear;*/
+    /*-ms-animation:move-background 70s linear;*/
+    /*-o-animation:move-background 70s linear;*/
+    /*-webkit-animation:move-background 70s linear;*/
+    /*animation:move-background 70s linear;*/
+}
+
+.clouds {
+    width: 10000px;
+    height: 600px;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+    /*-moz-animation:move-background 50s linear;*/
+    /*-ms-animation:move-background 50s linear;*/
+    /*-o-animation:move-background 50s linear;*/
+    /*-webkit-animation:move-background 50s linear;*/
+    /*animation:move-background 50s linear;*/
+
+}
+
+.moon {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}
+
+.wrapper {
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 4;
+    height: 515px;
+}
+
+.typing-demo {
+    width: 29ch;
+    animation: typing 2s steps(29), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 3.5rem;
+    letter-spacing: 0.35rem;
+    color: white;
+    margin-left: 100px;
+    text-shadow: 3px 4px 9px #ffffffb0;
+}
+
+.typing-demo::selection {
+    color: #000;
+    background: white;
+}
+
+#titre {
+    height: 515px;
+    max-width: 1000px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/********************************************accueil*********************************************** */
+#accueil {
+    display: flex;
+}
+
+.photo_identite {
+    margin-top: 75px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.photo_identite {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 2px 1px 3px #0000005c;
+}
+
+.photo_identite:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.intro p {
+    margin-top: 90px;
+    padding: 30px;
+    background: #e8e8e86e;
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px #808080a3;
+}
+
+/*********************************************** HR **********************************************/
+.hr {
+    padding-top: 1px;
+    width: 25%;
+    position: relative;
+    margin: 50px;
+    box-shadow: 0px 2px 4px black;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+/**************************************About*******************************/
+.chart {
+    background: rgba(128, 128, 128, 0.25);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+    margin-left: 70px;
+}
+
+.chart span {
+    /* You can modify the value below to change the distance between the percentage number and the bar */
+    margin-left: 5px;
+    color: #333;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* aimable*/
+@keyframes aimable {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 50%;
+    }
+}
+
+.aimable {
+    animation: aimable 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #333;
+    border-radius: 100px;
+    background: #333;
+    height: 30px;
+    width: 0;
+}
+
+/* carac 2*/
+
+@keyframes caractere2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 70%;
+    }
+}
+
+.carac2 {
+    animation: caractere2 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #333;
+    border-radius: 100px;
+    background: #333;
+    height: 30px;
+    width: 0;
+}
+
+/* caractere 3*/
+
+@keyframes caractere3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 50%;
+    }
+}
+
+.carac3 {
+    animation: caractere3 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #333;
+    border-radius: 100px;
+    background: #333;
+    height: 30px;
+    width: 0;
+}
+
+/* caractere4*/
+
+@keyframes caractere4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.carac4 {
+    animation: caractere4 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #333;
+    border-radius: 100px;
+    background: #333;
+    height: 30px;
+    width: 0;
+}
+
+/* caractere 5 */
+
+@keyframes caractere5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.carac5 {
+    animation: caractere5 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #333;
+    border-radius: 100px;
+    background: #333;
+    height: 30px;
+    width: 0;
+}
+
+.loisirs p {
+    margin-top: 110px;
+    padding: 30px;
+    background: #e8e8e86e;
+    border-radius: 20px;
+    box-shadow: -1px 2px 4px #808080a3;
+}
+
+/*******************************************icon************************************/
+
+.icon {
+    text-align: center;
+}
+
+.icon i {
+    margin: 40px 10px 0px 20px;
+    text-align: center;
+}
+
+/**********************cv*****************/
+#cv p {
+    margin: 0 80px 30px 80px;
+}
+
+#cv a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    background: #e8e8e86e;
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px #808080a3;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+#cv a:hover {
+    opacity: 0.6;
+    background: #333333;
+    color: beige;
+}
+
+/***********************footer*******************/
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    color: white;
+    background: #000;
+
+}
+
+footer ::selection {
+    color: black;
+    background: #fefefe;
+}
+
+.copy{
+    margin-top: 30px;
+}
